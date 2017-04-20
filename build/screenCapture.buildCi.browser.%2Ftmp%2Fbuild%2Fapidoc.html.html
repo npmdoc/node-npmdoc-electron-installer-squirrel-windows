@@ -1,0 +1,735 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="http://github.com/mongodb-js/electron-installer-squirrel-windows">electron-installer-squirrel-windows (v1.3.0)</a>
+</h1>
+<h4>Generate Windows installers for Electron apps using Squirrel.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.electron-installer-squirrel-windows">module electron-installer-squirrel-windows</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-installer-squirrel-windows.electron-installer-squirrel-windows">
+            function <span class="apidocSignatureSpan"></span>electron-installer-squirrel-windows
+            <span class="apidocSignatureSpan">(opts, done)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-installer-squirrel-windows.model">
+            function <span class="apidocSignatureSpan">electron-installer-squirrel-windows.</span>model
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">electron-installer-squirrel-windows.</span>model.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">electron-installer-squirrel-windows.</span>NUGET_EXE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">electron-installer-squirrel-windows.</span>NUSPEC_TEMPLATE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">electron-installer-squirrel-windows.</span>SYNC_RELEASES_EXE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">electron-installer-squirrel-windows.</span>UPDATE_COM</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">electron-installer-squirrel-windows.</span>UPDATE_EXE</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.electron-installer-squirrel-windows.model">module electron-installer-squirrel-windows.model</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-installer-squirrel-windows.model.model">
+            function <span class="apidocSignatureSpan">electron-installer-squirrel-windows.</span>model
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-installer-squirrel-windows.model.extend">
+            function <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.</span>extend
+            <span class="apidocSignatureSpan">(protoProps)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.</span>__super__</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.electron-installer-squirrel-windows.model.prototype">module electron-installer-squirrel-windows.model.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-installer-squirrel-windows.model.prototype.constructor">
+            function <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.prototype.</span>constructor
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-installer-squirrel-windows.model.prototype.initialize">
+            function <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.prototype.</span>initialize
+            <span class="apidocSignatureSpan">(opts, fn)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-installer-squirrel-windows.model.prototype.loadPackageJson">
+            function <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.prototype.</span>loadPackageJson
+            <span class="apidocSignatureSpan">(done)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-installer-squirrel-windows.model.prototype.loadPackageJsonFromResources">
+            function <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.prototype.</span>loadPackageJsonFromResources
+            <span class="apidocSignatureSpan">(done)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-installer-squirrel-windows.model.prototype.parse">
+            function <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.prototype.</span>parse
+            <span class="apidocSignatureSpan">(resp)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-installer-squirrel-windows.model.prototype.serialize">
+            function <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.prototype.</span>serialize
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-installer-squirrel-windows.model.prototype.sync">
+            function <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.prototype.</span>sync
+            <span class="apidocSignatureSpan">(method, model, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.prototype.</span>_children</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.prototype.</span>_collections</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.prototype.</span>_dataTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.prototype.</span>_definition</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.prototype.</span>_deps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.prototype.</span>_derived</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.electron-installer-squirrel-windows" id="apidoc.module.electron-installer-squirrel-windows">module electron-installer-squirrel-windows</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.electron-installer-squirrel-windows.electron-installer-squirrel-windows" id="apidoc.element.electron-installer-squirrel-windows.electron-installer-squirrel-windows">
+        function <span class="apidocSignatureSpan"></span>electron-installer-squirrel-windows
+        <span class="apidocSignatureSpan">(opts, done)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">electron-installer-squirrel-windows = function (opts, done) {
+  debug('generating squirrel-windows installer for', JSON.stringify(opts, null, 2));
+  var app = new Model(opts, function(err) {
+    if (err) return done(err);
+    series([
+      checkForExisting.bind(null, app),
+      createTempDirectory.bind(null, app),
+      createNugetPkg.bind(null, app),
+      syncReleases.bind(null, app),
+      createSetupExe.bind(null, app)
+    ], done);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-installer-squirrel-windows.model" id="apidoc.element.electron-installer-squirrel-windows.model">
+        function <span class="apidocSignatureSpan">electron-installer-squirrel-windows.</span>model
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">model = function () {
+    return parent.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.electron-installer-squirrel-windows.model" id="apidoc.module.electron-installer-squirrel-windows.model">module electron-installer-squirrel-windows.model</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.electron-installer-squirrel-windows.model.model" id="apidoc.element.electron-installer-squirrel-windows.model.model">
+        function <span class="apidocSignatureSpan">electron-installer-squirrel-windows.</span>model
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">model = function () {
+    return parent.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-installer-squirrel-windows.model.extend" id="apidoc.element.electron-installer-squirrel-windows.model.extend">
+        function <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.</span>extend
+        <span class="apidocSignatureSpan">(protoProps)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function extend(protoProps) {
+<span class="apidocCodeCommentSpan">    /*jshint validthis:true*/
+</span>    var parent = this;
+    var child;
+
+    // The constructor function for the new subclass is either defined by you
+    // (the "constructor" property in your `extend` definition), or defaulted
+    // by us to simply call the parent's constructor.
+    if (protoProps &amp;&amp; protoProps.hasOwnProperty('constructor')) {
+        child = protoProps.constructor;
+    } else {
+        child = function () {
+            return parent.apply(this, arguments);
+        };
+    }
+
+    // Add static properties to the constructor function from parent
+    assign(child, parent);
+
+    // Set the prototype chain to inherit from `parent`, without calling
+    // `parent`'s constructor function.
+    var Surrogate = function () { this.constructor = child; };
+    Surrogate.prototype = parent.prototype;
+    child.prototype = new Surrogate();
+
+    // set prototype level objects
+    child.prototype._derived =  assign({}, parent.prototype._derived);
+    child.prototype._deps = assign({}, parent.prototype._deps);
+    child.prototype._definition = assign({}, parent.prototype._definition);
+    child.prototype._collections = assign({}, parent.prototype._collections);
+    child.prototype._children = assign({}, parent.prototype._children);
+    child.prototype._dataTypes = assign({}, parent.prototype._dataTypes || dataTypes);
+
+    // Mix in all prototype properties to the subclass if supplied.
+    if (protoProps) {
+        var omitFromExtend = [
+            'dataTypes', 'props', 'session', 'derived', 'collections', 'children'
+        ];
+        for(var i = 0; i &lt; arguments.length; i++) {
+            var def = arguments[i];
+            if (def.dataTypes) {
+                forOwn(def.dataTypes, function (def, name) {
+                    child.prototype._dataTypes[name] = def;
+                });
+            }
+            if (def.props) {
+                forOwn(def.props, function (def, name) {
+                    createPropertyDefinition(child.prototype, name, def);
+                });
+            }
+            if (def.session) {
+                forOwn(def.session, function (def, name) {
+                    createPropertyDefinition(child.prototype, name, def, true);
+                });
+            }
+            if (def.derived) {
+                forOwn(def.derived, function (def, name) {
+                    createDerivedProperty(child.prototype, name, def);
+                });
+            }
+            if (def.collections) {
+                forOwn(def.collections, function (constructor, name) {
+                    child.prototype._collections[name] = constructor;
+                });
+            }
+            if (def.children) {
+                forOwn(def.children, function (constructor, name) {
+                    child.prototype._children[name] = constructor;
+                });
+            }
+            assign(child.prototype, omit(def, omitFromExtend));
+        }
+    }
+
+    // Set a convenience property in case the parent's prototype is needed
+    // later.
+    child.__super__ = parent.prototype;
+
+    return child;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var titlecase = require('titlecase');
+var defaults = require('./defaults');
+var format = require('util').format;
+
+var createSyncErrback = require('./create-sync-errback');
+
+// @todo (imlucas): move this to `electron-installer-model`
+var App = Model.<span class="apidocCodeKeywordSpan">extend</span>({
+props: {
+  name: 'string',
+  version: 'string',
+  description: 'string',
+  copyright: 'string',
+  // Path to the app.
+  path: 'string',
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.electron-installer-squirrel-windows.model.prototype" id="apidoc.module.electron-installer-squirrel-windows.model.prototype">module electron-installer-squirrel-windows.model.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.electron-installer-squirrel-windows.model.prototype.constructor" id="apidoc.element.electron-installer-squirrel-windows.model.prototype.constructor">
+        function <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.prototype.</span>constructor
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function () {
+    return parent.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-installer-squirrel-windows.model.prototype.initialize" id="apidoc.element.electron-installer-squirrel-windows.model.prototype.initialize">
+        function <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.prototype.</span>initialize
+        <span class="apidocSignatureSpan">(opts, fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initialize = function (opts, fn) {
+  if (typeof opts === 'string') {
+    opts = {
+      path: opts
+    };
+  }
+  if (!fn) return;
+
+  if (!opts.path) {
+    process.nextTick(function() {
+      fn(new TypeError('Missing required `path` param.'));
+    });
+    return;
+  }
+
+  if (!opts.out) {
+    opts.out = path.resolve(opts.path, '..');
+  }
+
+  this.on('sync', function(model) {
+    debug('loaded model', JSON.stringify(model.toJSON(), null, 2));
+    fn(null, model);
+  });
+  this.on('error', function(model, err) {
+    debug('error fetching model', err);
+    fn(err);
+  });
+  debug('fetching app model');
+  this.fetch(opts);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-installer-squirrel-windows.model.prototype.loadPackageJson" id="apidoc.element.electron-installer-squirrel-windows.model.prototype.loadPackageJson">
+        function <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.prototype.</span>loadPackageJson
+        <span class="apidocSignatureSpan">(done)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">loadPackageJson = function (done) {
+  if (!this.asar) {
+    return this.loadPackageJsonFromResources(done);
+  }
+  fs.exists(this.asar, function(exists) {
+    if (exists) {
+      done(null, JSON.parse(asar.extractFile(this.asar, 'package.json')));
+    } else {
+      this.loadPackageJsonFromResources(done);
+    }
+  }.bind(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var done = createSyncErrback(method, model, options);
+
+var overrides = clone(options);
+delete overrides.parse;
+delete overrides.path;
+debug('sync called w/ overrides', JSON.stringify(overrides, null, 2));
+
+this.<span class="apidocCodeKeywordSpan">loadPackageJson</span>(function(err, data) {
+  if (err) {
+    debug('error loading package json', err);
+    return done(err);
+  }
+  var res = assign(data, overrides);
+  done(null, res);
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-installer-squirrel-windows.model.prototype.loadPackageJsonFromResources" id="apidoc.element.electron-installer-squirrel-windows.model.prototype.loadPackageJsonFromResources">
+        function <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.prototype.</span>loadPackageJsonFromResources
+        <span class="apidocSignatureSpan">(done)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">loadPackageJsonFromResources = function (done) {
+  var src = path.join(this.resources, 'app', 'package.json');
+  fs.readFile(src, function(err, buf) {
+    if (err) return done(err);
+
+    done(null, JSON.parse(buf));
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    if (err) return done(err);
+
+    done(null, JSON.parse(buf));
+  });
+},
+loadPackageJson: function(done) {
+  if (!this.asar) {
+    return this.<span class="apidocCodeKeywordSpan">loadPackageJsonFromResources</span>(done);
+  }
+  fs.exists(this.asar, function(exists) {
+    if (exists) {
+      done(null, JSON.parse(asar.extractFile(this.asar, 'package.json')));
+    } else {
+      this.loadPackageJsonFromResources(done);
+    }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-installer-squirrel-windows.model.prototype.parse" id="apidoc.element.electron-installer-squirrel-windows.model.prototype.parse">
+        function <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.prototype.</span>parse
+        <span class="apidocSignatureSpan">(resp)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parse = function (resp) {
+  resp.name_original = resp.name;
+  resp.name = titlecase(resp.name.replace(/-/g, ' ')).replace(/ /, '');
+  resp.product_name = resp.product_name || resp.productName || resp.name;
+  resp.icon_url = resp.icon_url || resp.iconUrl;
+
+  if (!resp.authors) {
+    resp.authors = resp.author ? resp.author.name : '';
+  }
+  if (!resp.exe) {
+    resp.exe = format('%s.exe', resp.name);
+  }
+
+  resp.loading_gif = resp.loading_gif || resp.loadingGif;
+  if (!resp.loading_gif) {
+    resp.loading_gif = defaults.LOADING_GIF;
+  }
+
+  if (!resp.owners) {
+    resp.owners = resp.authors;
+  }
+
+  if (!resp.title) {
+    resp.title = resp.product_name;
+  }
+
+  resp.icon_url = resp.icon_url || resp.iconUrl;
+  if (!resp.icon_url) {
+    resp.icon_url = defaults.ICON_URL;
+  }
+
+  if (!resp.copyright) {
+    resp.copyright = format('%s %s', new Date().getFullYear(), resp.owners);
+  }
+
+  if (!resp.setup_filename) {
+    resp.setup_filename = format('%sSetup.exe', resp.name);
+  }
+
+  if (!resp.nuget_id) {
+    resp.nuget_id = resp.name;
+  }
+
+  resp.version = resp.version.replace(/-.*$/, '');
+  return resp;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    fn(model, resp, options);
+  }
+  model.trigger('error', model, resp, options);
+};
+
+var success = options.success;
+options.success = function(resp) {
+  if (!model.set(model.<span class="apidocCodeKeywordSpan">parse</span>(resp, options), options)) return false;
+  if (success) {
+    success(model, resp, options);
+  }
+};
+return function(err, resp) {
+  if (err) {
+    options.error(err);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-installer-squirrel-windows.model.prototype.serialize" id="apidoc.element.electron-installer-squirrel-windows.model.prototype.serialize">
+        function <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.prototype.</span>serialize
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">serialize = function () {
+  var res = this.getAttributes({
+    props: true,
+    derived: true
+  }, true);
+  each(this._children, function(value, key) {
+    res[key] = this[key].serialize();
+  }, this);
+  each(this._collections, function(value, key) {
+    res[key] = this[key].serialize();
+  }, this);
+  return res;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  },
+  serialize: function() {
+    var res = this.getAttributes({
+      props: true,
+      derived: true
+    }, true);
+    each(this._children, function(value, key) {
+      res[key] = this[key].<span class="apidocCodeKeywordSpan">serialize</span>();
+    }, this);
+    each(this._collections, function(value, key) {
+      res[key] = this[key].serialize();
+    }, this);
+    return res;
+  }
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-installer-squirrel-windows.model.prototype.sync" id="apidoc.element.electron-installer-squirrel-windows.model.prototype.sync">
+        function <span class="apidocSignatureSpan">electron-installer-squirrel-windows.model.prototype.</span>sync
+        <span class="apidocSignatureSpan">(method, model, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sync = function (method, model, options) {
+  this.path = options.path;
+  this.out = options.out;
+  var done = createSyncErrback(method, model, options);
+
+  var overrides = clone(options);
+  delete overrides.parse;
+  delete overrides.path;
+  debug('sync called w/ overrides', JSON.stringify(overrides, null, 2));
+
+  this.loadPackageJson(function(err, data) {
+    if (err) {
+      debug('error loading package json', err);
+      return done(err);
+    }
+    var res = assign(data, overrides);
+    done(null, res);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
